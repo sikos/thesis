@@ -4,8 +4,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Compile basic LaTeX document
-        uses: ./
+      - name: Set up Git repository
+        uses: sikos/thesis@master
         with:
           root_file: dissertation.tex
           working_directory: test/
