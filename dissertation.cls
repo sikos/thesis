@@ -45,6 +45,8 @@
 \RequirePackage{lettrine}
 \RequirePackage{metalogo}
 \RequirePackage[sectionbib,numbers,sort&compress]{natbib}
+\RequirePackage{calligra}
+
 \RequirePackage{tikz}
 \RequirePackage[noindentafter]{titlesec}
 \RequirePackage{titletoc}
@@ -436,7 +438,7 @@
     \begin{flushright}%
         {\rmfamily\itshape #2}%
         \vskip 0.5\baselineskip%
-        #3%
+        --- \calligra #3%
     \end{flushright}%
     \vspace{#1}%
 }

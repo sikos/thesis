@@ -4,7 +4,7 @@
 all: dissertation.pdf
 
 clean:
-	find . \( -name '*.out'  -o -name '*.aux' -o -name '*.log' -o -name '*.pdf' -o -name '*.out' \) -exec rm {} \;
+	find . \( -name '*.out'  -o -name '*.aux' -o -name '*.log' -o -name '*.pdf' -o -name '*.out' -o -name '*.toc' -o -name '*.bib' \) -exec rm {} \;
 
 force-build:
 
@@ -14,6 +14,3 @@ dissertation.pdf: force-build
 	xelatex dissertation
 	xelatex dissertation
 
-propositions.pdf: force-build
-	xelatex propositions
-	xelatex propositions
